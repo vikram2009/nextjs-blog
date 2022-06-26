@@ -32,7 +32,7 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <img src="https://logo-phi.vercel.app/favicon.ico" alt="VS" width={75} height={75} />
+           VS
           </span>
         </a>
       </footer>
