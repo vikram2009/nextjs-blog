@@ -73,6 +73,15 @@
   max-width: 800px;
 }
 
+.slug {
+  text-align: center ;
+  padding : 20px;
+  margin: 350px;
+  background-color: #444;
+  color:#fff;
+  height: 10vh;
+}
+
 .card {
   margin: 1rem;
   padding: 1.5rem;
@@ -97,6 +106,8 @@
   font-size: 1.5rem;
 }
 
+
+
 .card p {
   margin: 0;
   font-size: 1.25rem;
@@ -113,4 +124,18 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.navbar ul{
+display: flex;
+justify-content: center ;
+padding: 2px 4px;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  text-decoration: none;
+  list-style :none;
+  padding: 10px;
+  font-weight: bold;
 }
