@@ -10,4 +10,3 @@ Paste this code in the <HEAD> tag of u html website
 U'll then see a redish backgrounds 
 check out Many other backgrounds by use this code :- background-image :var(background_name_here);
 
-
