@@ -1,0 +1,13 @@
+HEY ALL WELCOME TO MY BLOG
+IN THIS BLOG WE WILL KNOW MORE ABOUT GINYOS_CSS
+ITS VERY EASY TO USE 
+VIST --> https://github.com/vikram2009/css 
+to know more 
+GET STARTED :- 
+Backgrounds css:-
+Paste this code in the <HEAD> tag of u html website 
+<link rel="stylesheet" href="css-blush.vercel.app/backgrounds.css">
+U'll then see a redish backgrounds 
+check out Many other backgrounds by use this code :- background-image :var(background_name_here);
+
+
