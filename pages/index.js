@@ -16,7 +16,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to my Blog
         </h1>
-
+<br/>
         <p className={styles.description}>
           Get started by pasting this into ur favorite terminal{' '}
           <code className={styles.code}>npm i nextjs-blog-vikramsrinivas</code>
