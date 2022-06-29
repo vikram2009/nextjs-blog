@@ -1,9 +1,13 @@
 import React from 'react'
+import Head from 'next/head'
 import Link from 'next/link'
 const about = () => {
   return (
 
 <div>
+  <Head>
+    <title>About</title>
+  </Head>
 <h1>
 <Link href="/Blog-1.txt">
     First Blog
