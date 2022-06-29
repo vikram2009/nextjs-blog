@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
@@ -15,14 +14,14 @@ export default function Home() {
 
 <nav className={styles.navbar}>
   <ul>
-    <Link href='\'>
+    <Link href='/'>
     
   <li>Home</li>
     </Link>
-    <Link href='\about'>
+    <Link href='/about'>
   <li>About</li>
     </Link>
-    <Link href='\blogspot\Welcome to Our Blog'>
+    <Link href='/blogspot/Welcome to Our Blog'>
   <li>Blog</li>
     </Link>
   </ul>
