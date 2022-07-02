@@ -10,7 +10,7 @@ export const NavBar = () => {
         <div>
         <div>
         <LoadingBar
-          color='red'
+          color='blue'
           progress={progress}
           waitingTime={600}
           onLoaderFinished={() => setProgress(0)}
@@ -31,9 +31,16 @@ export const NavBar = () => {
         &nbsp;About</li></Link>
         
 {/* Blog */}
-        <Link href='/blog' ><li onClick={() => setProgress(100)}>
+<Link href='/blog' ><li onClick={() => setProgress(100)}>
         <img src="/blog.svg"></img>
         &nbsp;Blog</li></Link>
+
+{/* Contact */} 
+       <Link href='/contact' ><li onClick={() => setProgress(100)}>
+        <img src="/contact.svg"></img>
+        &nbsp;Contact</li></Link>
+
+
 
 
             </ul>
