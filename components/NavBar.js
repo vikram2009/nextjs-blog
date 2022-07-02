@@ -20,9 +20,20 @@ export const NavBar = () => {
 
             <ul>
 
-        <Link href='/' ><li onClick={() => setProgress(100)}>Home</li></Link>
-        <Link href='/about' ><li onClick={() => setProgress(100)}>About</li></Link>
-        <Link href='/blogspot/Welcome to Our Blog' ><li onClick={() => setProgress(100)}>Blog</li></Link>
+{/* Home */}
+        <Link href='/' ><li onClick={() => setProgress(100)}>
+        <img src="/home.svg"></img>
+        &nbsp;Home</li></Link>
+        
+{/* About */}
+        <Link href='/about' ><li onClick={() => setProgress(100)}>
+        <img src="/about.svg"></img>
+        &nbsp;About</li></Link>
+        
+{/* Blog */}
+        <Link href='/blog' ><li onClick={() => setProgress(100)}>
+        <img src="/blog.svg"></img>
+        &nbsp;Blog</li></Link>
 
 
             </ul>
