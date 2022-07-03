@@ -2,15 +2,17 @@ import Head from 'next/head'
 import React, { useEffect } from 'react'
 import styles from '../styles/blog.module.css'
 import Link from 'next/link'
+import { useState } from 'react'
 const Blog = () => {
-
+const [blogs, setblogs] = useState([])
   useEffect(() => {
-    fetch("https://nextjs-blog-vikram2009.vercel.app/api/blog").then((a) =>{
+    fetch("http://localhost:3000/api/blogs").then((a) =>{
       return a.json(); })
       .then((parsed) => {
-        console.log(parsed)        
+       
+        setblogs(parsed)      
       })
-  })
+  } , [])
 
   return (
     <div>
@@ -21,27 +23,23 @@ const Blog = () => {
 
         </Head>
 <main className={styles.content}>
+{blogs.map((blogitem) => {
+  return <div key={blogitem.title}>
 
-<Link href='/blogspot/What Is JavaScript'>
-<a>
+  <Link href={`/blogspot/${blogitem.slug}`}>
+  <a>
+    
+    <h1>{blogitem.title}</h1>
   
-  <h1>    Learn JavaScript  </h1>
-
-</a>
-</Link>
-
-
-
-  <Link href='/blogspot/Best JS Frameworks'>
-<a>
-
-  <h1>Best JS Frameworks</h1>
+  </a>
+  </Link>
+  </div>
   
-</a>
-</Link>
+  
+})}
 
 
-
+  
 
 
 </main>
