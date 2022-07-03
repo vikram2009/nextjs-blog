@@ -4,7 +4,13 @@ import styles from '../styles/blog.module.css'
 import Link from 'next/link'
 const Blog = () => {
 
-  useEffect()
+  useEffect(() => {
+    fetch("https://nextjs-blog-vikram2009.vercel.app/api/blog").then((a) =>{
+      return a.json(); })
+      .then((parsed) => {
+        console.log(parsed)        
+      })
+  })
 
   return (
     <div>

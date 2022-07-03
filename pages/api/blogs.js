@@ -15,12 +15,7 @@ allblogs.push(JSON.parse(myfile))
 }
 res.status(200).json(allblogs);
 
-    // fs.readdir('blogdata' ,  (err , data) => {
-
-
-//     res.status(200).json(data);
-
-// })    
+ 
     
 
 
