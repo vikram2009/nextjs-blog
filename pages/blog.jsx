@@ -4,7 +4,7 @@ import styles from '../styles/blog.module.css'
 import Link from 'next/link'
 const Blog = () => {
 
-  
+  useEffect()
 
   return (
     <div>
