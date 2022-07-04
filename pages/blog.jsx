@@ -6,13 +6,15 @@ import { useState } from 'react'
 const Blog = () => {
 const [blogs, setblogs] = useState([])
   useEffect(() => {
-    fetch("http://localhost:3000/api/blogs").then((a) =>{
-      return a.json(); })
-      .then((parsed) => {
-       
-        setblogs(parsed)      
-      })
-  } , [])
+    
+  fetch('http://localhost:3000/api/blogs').then((a) => {
+    return a.json();
+  })
+    .then((parsed) => {
+      setblogs(parsed);
+    })
+  }, [])
+  
 
   return (
     <div>
@@ -22,21 +24,25 @@ const [blogs, setblogs] = useState([])
             </title>
 
         </Head>
-<main className={styles.content}>
-{blogs.map((blogitem) => {
-  return <div key={blogitem.title}>
 
-  <Link href={`/blogspot/${blogitem.slug}`}>
-  <a>
-    
-    <h1>{blogitem.title}</h1>
-  
-  </a>
-  </Link>
-  </div>
-  
-  
-})}
+
+
+
+<main className={styles.content}>
+
+{blogs.map((blogitem => {
+    return <div key={blogitem.id}>
+
+    <Link href={`/blogspot/${blogitem.slug}`}>
+      <a>
+        
+        <h1>{blogitem.title}</h1>
+      
+      </a>
+      </Link>
+      </div>
+}))}
+
 
 
   
