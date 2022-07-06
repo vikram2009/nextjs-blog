@@ -7,7 +7,7 @@ const Blog = () => {
 const [blogs, setblogs] = useState([])
   useEffect(() => {
     
-  fetch("https://nextjs-blog-vikram2009.vercel.app/api/blogs").then((a) => {
+  fetch('http://localhost:3000/api/blogs').then((a) => {
     return a.json();
   })
     .then((parsed) => {
