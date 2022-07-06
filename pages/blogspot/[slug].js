@@ -15,7 +15,7 @@ const Slug = () => {
 useEffect(() => {
  if(!router.isReady) return ; 
   const { slug } = router.query;
-fetch(`http://localhost:3000/api/getblog?slug=${slug}`).then((a) => {
+fetch(`https://nextjs-blog-vikram2009.vercel.app/api/getblog?slug=${ { slug }}`).then((a) => {
   return a.json();
 })
 .then((parsed) => {
