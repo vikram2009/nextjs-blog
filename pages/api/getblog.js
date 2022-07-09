@@ -24,7 +24,13 @@ const  Websites =  {
     "slug" : "Websites"
     
 };
-const bestjsframeworks = 
+const bestjsframeworks = {
+    "title" : "Best JavaScript Frameworks",
+    "content" : "Frontend :- AngularJS & ReactJS  ,  Backend :- NodeJS ,   Frontend && Backend :- NextJS",
+    "author" : "Vikram Srinivas",
+    "slug" : "bestjsframeworks"
+    
+};
 
 
 
