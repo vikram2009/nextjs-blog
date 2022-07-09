@@ -31,6 +31,11 @@ if(req.query.slug === 'whatisjs'){
     res.status(200).json(whatisjs)
 }else if (req.query.slug === 'bestjsframeworks') {
     res.status(200).json(bestjsframeworks)
+}else if (req.query.slug === 'Github') {
+    res.status(200).json(Github)
+}else if (req.query.slug === 'Websites') {
+    res.status(200).json(Websites)
 }
+
     }
     
