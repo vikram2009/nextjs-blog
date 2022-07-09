@@ -1,5 +1,5 @@
 .content {
-    justify-content: center;
+  justify-content: center;
   align-items: center;
 padding: 140px;
   padding-left:546px;
@@ -30,4 +30,21 @@ padding: .8em 1em;
 
 .p input{
 width: 30rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .content {
+    justify-content: center;
+  align-items: center;
+padding: 140px;
+  padding-left:155px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    justify-content: center;
+  align-items: center;
+
+  }
 }
