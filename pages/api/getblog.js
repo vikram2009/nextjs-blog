@@ -7,13 +7,25 @@ const whatisjs =  {
     "slug" : "whatisjs"
 } ; 
 
-const  bestjsframeworks =  {
-    "title" : "Best JavaScript Frameworks",
-    "content" : "Frontend :- AngularJS & ReactJS  ,  Backend :- NodeJS ,   Frontend && Backend :- NextJS",
+const  Github =  {
+    "title" : "Github",
+    "content" : "",
     "author" : "Vikram Srinivas",
-    "slug" : "bestjsframeworks"
+    "slug" : "Github"
     
 };
+
+
+
+const  Websites =  {
+    "title" : "Websites",
+    "content" : "",
+    "author" : "Vikram Srinivas",
+    "slug" : "Websites"
+    
+};
+
+
 
 if(req.query.slug === 'whatisjs'){
     res.status(200).json(whatisjs)
