@@ -36,6 +36,7 @@ fetch('/api/mail' , {
 <input type="email" name="email" placeholder="example@example.com"></input>
 </p>
 
+
 {/* description */}
 <p>
 <label htmlFor="desc">Message</label>
