@@ -27,9 +27,6 @@ yarn-error.log*
 
 # local env files
 .env
-sendgrid.env
+"sendgrid.env"
 # vercel
 .vercel
-"sendgrid.env" 
-"sendgrid.env" 
-"sendgrid.env" 
