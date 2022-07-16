@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import LoadingBar from 'react-top-loading-bar'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 export const NavBar = () => {
+        const router = useRouter();
+
     const [progress, setProgress] = useState(0)
+  useEffect(() => {
+        router.events.on('routeChangeStart' , () => {
+                setProgress(40);
+                        })
+
+                        router.events.on('routeChangeComplete' , () => {
+                                setProgress(100);
+                                        })
+
+
+  })
     return (
 
         <div>
@@ -21,22 +35,22 @@ export const NavBar = () => {
             <ul>
 
 {/* Home */}
-        <Link href='/' ><li onClick={() => setProgress(100)}>
+        <Link href='/' ><li>
         <img src="/home.svg"></img>
         &nbsp;Home</li></Link>
         
 {/* About */}
-        <Link href='/about' ><li onClick={() => setProgress(100)}>
+        <Link href='/about' ><li>
         <img src="/about.svg"></img>
         &nbsp;About</li></Link>
         
 {/* Blog */}
-<Link href='/blog' ><li onClick={() => setProgress(100)}>
+<Link href='/blog' ><li>
         <img src="/blog.svg"></img>
         &nbsp;Blog</li></Link>
 
 {/* Contact */} 
-       <Link href='/contact' ><li onClick={() => setProgress(100)}>
+       <Link href='/contact' ><li>
         <img src="/contact.svg"></img>
         &nbsp;Contact</li></Link>
 
